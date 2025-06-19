@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Acessibilidade: classe para esconder textos visuais (ex: labels escondidos) */
@@ -21,7 +22,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px 90px;
     flex-wrap: wrap;
 }
 
@@ -30,11 +31,10 @@ header img.logo {
 }
 
 form {
-    display: flex;
-    align-items: center;
     background-color: #F6F0F0;
     border-radius: 20px;
     padding: 5px 10px;
+    margin-left: 155px;
 }
 
 form input[type="search"] {
@@ -44,7 +44,7 @@ form input[type="search"] {
     font-size: 16px;
     background-color: transparent;
     color: #1E1E1E;
-    width: 350px;
+    width: 560px;
 }
 
 form button {
@@ -113,7 +113,7 @@ nav[aria-label="Menu principal"] ul li a {
     height: 600px;
     border-radius: 20px;
     margin: 10px auto 5px auto;
-    background: #fff;
+    background: #ffffff;
 }
 
 .banner {
@@ -121,11 +121,12 @@ nav[aria-label="Menu principal"] ul li a {
     top: 0;
     left: 0;
     width: 100%;
+    margin: 0 auto;
     opacity: 0;
     animation: troca-banner 10s infinite;
-    display: flex;          
-    justify-content: center;   
-    align-items: center;       
+    display: flex;     
+    align-items: flex-start;     
+    justify-content: center;       
 }
 
 .banner:nth-child(1) { animation-delay: 0s; }
@@ -133,11 +134,11 @@ nav[aria-label="Menu principal"] ul li a {
 .banner:nth-child(3) { animation-delay: 6s; }
 
 .banner img {
-    max-width: 95%;     /* evita que a imagem ocupe 100%, deixando uma margem */
+    max-width: 100%;     /* evita que a imagem ocupe 100%, deixando uma margem */
     object-fit: contain; /* mantém proporção sem cortar */
     border-radius: 20px; 
     display: block;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 @keyframes troca-banner {
@@ -260,7 +261,7 @@ nav[aria-label="Menu principal"] ul li a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 55px;
 }
 
 .lista-promocoes li {
@@ -294,17 +295,21 @@ nav[aria-label="Menu principal"] ul li a {
 }
 
 .preco-atual {
-    font-size: large;
+    font-size: 40px;
     font-weight: bold;
     color: #0e1c34;
 }
-.preco-atual p {
-    font-size: 30px;
+
+#preco1, #preco2, #preco3 {
+    font-size:22px;
+    font-weight: bolder;
 }
 
 .avaliacao {
     margin-top: 5px;
     color: #535253;
+    text-align: right;
+    padding-right: 5px;
 }
 
 .botoes {
@@ -355,14 +360,20 @@ button.ver-mais:hover {
 .card-promocao.rosa {
     width:320px;
     background-color: #FBD5E8;
+    padding: 1.5rem;
+    padding-top: 0;
 }
 .card-promocao.lilas {
     width:320px;
     background-color: #DABDFF;
+    padding: 1.5rem;
+    padding-top: 0;
 }
 .card-promocao.azul {
     width:320px;
     background-color: #DBF0FF;
+    padding: 1.5rem;
+    padding-top: 0;
 }
 #sobre-nos {
     background-color: #FBD5E8;
@@ -569,6 +580,7 @@ button:focus {
 }
 
 .formulario-card {
+    background: #dabdff;
     position: absolute;
     bottom: 30px;
     right: 30px;

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Página Principal</title>
 </head>
+
 <body>
 
     <header>
@@ -90,7 +94,7 @@
         </nav>
     </section>
 
-     <!-- Promoções da semana -->
+    <!-- Promoções da semana -->
     <section class="promocoes-semana">
         <h2>Promoções da semana</h2>
 
@@ -101,7 +105,7 @@
                 <h3>Clássicos do Amor</h3>
                 <p>O trio perfeito de donuts fofinhos com cobertura de morango, chocolate e baunilha.</p>
                 <p class="preco-antigo">De R$ 18,00</p>
-                <p class="preco-atual">Por R$ 15,00</p>
+                <p class="preco" id="preco1">Por R$ 15,00</p>
                 <p class="avaliacao">★★★★★ (65+)</p>
                 <section class="botoes">
                     <button class="carrinho-rosa">Adicionar ao Carrinho</button>
@@ -114,7 +118,7 @@
                 <h3>Combo Geladinho & Donut</h3>
                 <p>Dois milkshakes cremosos (baunilha e cookies) + donut com confeitos coloridos.</p>
                 <p class="preco-antigo">De R$ 36,00</p>
-                <p class="preco-atual">Por R$ 33,00</p>
+                <p class="preco-atual" id="preco2">Por R$ 33,00</p>
                 <p class="avaliacao">★★★★★ (38+)</p>
                 <section class="botoes">
                     <button class="carrinho-lilas">Adicionar ao Carrinho</button>
@@ -125,9 +129,10 @@
             <li class="card-promocao azul">
                 <img src="./imagens/Produtos-Projeto-Integrador/donut-fundo.png" alt="Choco Power">
                 <h3>Choco Power</h3>
-                <p>Milkshake de maracujá com chocolate, milkshake de chocolate com ninho + donut de chocolate e donut de ninho.</p>
+                <p>Milkshake de maracujá com chocolate, milkshake de chocolate com ninho + donut de chocolate e donut de
+                    ninho.</p>
                 <p class="preco-antigo">De R$ 42,00</p>
-                <p class="preco-atual">Por R$ 38,00</p>
+                <p class="preco-atual" id="preco3">Por R$ 38,00</p>
                 <p class="avaliacao">★★★★★ (12+)</p>
                 <section class="botoes">
                     <button class="carrinho-azul">Adicionar ao Carrinho</button>
@@ -177,20 +182,20 @@
             <article aria-labelledby="contato-titulo" class="contato-box">
                 <h2 id="contato-titulo">Contato</h2>
                 <p class="contato-descricao">
-                     Ficou com vontade? Fala com a gente!
+                    Ficou com vontade? Fala com a gente!
                 </p>
                 <address class="contato-info">
-                    <p>📧 E-mail: 
+                    <p>📧 E-mail:
                         <a href="mailto:contato@donutsdelicia.com">
                             candylovers@gmail.com
                         </a>
                     </p>
-                    <p>📱 WhatsApp: 
+                    <p>📱 WhatsApp:
                         <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">
                             (11) 99999-9999
                         </a>
                     </p>
-                    <p>📸 Instagram: 
+                    <p>📸 Instagram:
                         <a href="https://instagram.com/candylovers" target="_blank" rel="noopener">
                             @candylovers
                         </a>
@@ -201,7 +206,7 @@
                 </address>
             </article>
 
-                <!-- Bloco Entrega -->
+            <!-- Bloco Entrega -->
             <article aria-labelledby="entrega-titulo" class="entrega-box">
                 <h2 id="entrega-titulo">Entrega</h2>
                 <p class="entrega-descricao">
@@ -220,7 +225,8 @@
         </div>
 
         <figure class="contato-entrega-imagem">
-            <img src="./imagens/Produtos-Projeto-Integrador/donut-duvida.png" alt="Personagem de donut com expressão de dúvida">
+            <img src="./imagens/Produtos-Projeto-Integrador/donut-duvida.png"
+                alt="Personagem de donut com expressão de dúvida">
         </figure>
 
     </section>
@@ -255,11 +261,12 @@
 
         <form class="formulario-card" aria-label="Formulário de inscrição para newsletter">
             <label for="campo-email" class="oculto-visual">Seu endereço de e-mail</label>
-            <input type="email" id="campo-email" name="email" placeholder="E-mail"
-                class="campo-input-card" required aria-required="true">
+            <input type="email" id="campo-email" name="email" placeholder="E-mail" class="campo-input-card" required
+                aria-required="true">
             <button type="submit" class="botao-card">Inscrever-se</button>
         </form>
     </section>
 
 </body>
+
 </html>
