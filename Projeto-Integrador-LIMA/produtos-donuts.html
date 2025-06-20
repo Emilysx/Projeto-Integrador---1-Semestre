@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Produtos-Donuts</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" aria-label="Página inicial">
+            <img src="imagens/logo.png" alt="Logo Candy Lovers" class="logo">
+        </a>
+
+        <form role="search" aria-label="Pesquisar produtos">
+            <label for="search" class="visually-hidden">Pesquisar</label>
+            <input type="search" id="search" name="search" placeholder="Pesquisar">
+            <button type="submit" aria-label="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <nav aria-label="Acesso rápido">
+            <ul>
+                <li>
+                    <a href="#" aria-label="Ver o carrinho"><i class="fa-solid fa-cart-shopping"></i>Carrinho</a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Fazer login na sua conta"><i class="fa-solid fa-user"></i> Entrar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav aria-label="Menu principal">
+        <ul>
+            <li><a href="#sobre-nos">Sobre nós</a></li>
+            <li><a href="#contato-entrega">Contato</a></li>
+            <li><a href="#contato-entrega">Entrega</a></li>
+            <li><a href="produtos-todos.html">Produtos</a></li>
+            <li><a href="#">Cadastrar-se</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Carrossel de banners -->
+        <section class="carrossel" aria-label="Destaques da loja">
+            <figure class="banner">
+                <img src="./imagens/Banners-ProjetoIntegrador/Banner Donuts.png" alt="Novos sabores de donuts">
+            </figure>
+            <figure class="banner">
+                <img src="./imagens/Banners-ProjetoIntegrador/Banner MilkShake.png"
+                    alt="Promoção especial de milkshakes">
+            </figure>
+            <figure class="banner">
+                <img src="./imagens/Banners-ProjetoIntegrador/Banner Combinação.png" alt="Combos imperdíveis para você">
+            </figure>
+        </section>
+
+        <!-- Categorias -->
+        <section class="categorias">
+            <h2>Categorias</h2>
+            <nav>
+                <ul>
+                    <li class="categoria-todos">
+                        <a href="produtos-todos.html">
+                            <img src="./imagens/Produtos-Projeto-Integrador/29.png" alt="Todos os produtos">
+                            <span>Todos</span>
+                        </a>
+                    </li>
+                    <li class="categoria-donut">
+                        <a href="produtos-donuts.html">
+                            <img src="./imagens/Produtos-Projeto-Integrador/31.png" alt="Donuts">
+                            <span>Donuts</span>
+                        </a>
+                    </li>
+                    <li class="categoria-milkshake">
+                        <a href="produtos-milkshake.html">
+                            <img src="./imagens/Produtos-Projeto-Integrador/milkshake-2.png" alt="Milkshake">
+                            <span>Milkshake</span>
+                        </a>
+                    </li>
+                    <li class="categoria-combos">
+                        <a href="produtos-combos.html">
+                            <img src="./imagens/Produtos-Projeto-Integrador/51.png" alt="Combos">
+                            <span>Combos</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Promoções da semana -->
+        <section class="promocoes-semana">
+            <h2 id="titulo-donuts" class="titulo-com-linha">Donuts</h2>
+
+            <ul class="lista-promocoes">
+
+                <li class="card-promocao rosa">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut1-fundo.png" alt="Donout de Pistache">
+                    <h3>Pistache Supremo</h3>
+                    <p>Donut com cobertura cremosa sabor pistache e finalização com raspas crocantes do fruto. Ideal
+                        para quem ama um sabor refinado e diferente.</p>
+                    <p class="preco" id="preco1">Preço: R$ 6,00</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (50+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+                <li class="card-promocao lilas">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut2-fundo.png"
+                        alt="Donut de Baunilha e Chocolate">
+                    <h3>Dueto Chocolate & Baunilha</h3>
+                    <p>O Dueto Chocolate & Baunilha traz o melhor dos dois mundos: uma cobertura generosa de chocolate
+                        ao leite, junto com uma delicada calda de baunilha. </p>
+                    <p class="preco-atual" id="preco2">Preço: R$ 5,50</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (78+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+                <li class="card-promocao azul">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut3-fundo.png"
+                        alt="Donout de Morango com fios de Chocolate">
+                    <h3>Duetto Delícia</h3>
+                    <p>Donut com cobertura de morango e fios generosos de chocolate meio amargo. A combinação perfeita
+                        entre o doce e o intenso!</p>
+                    <p class="preco-atual" id="preco3">Preço R$ 6,00</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (112+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+            </ul>
+
+
+            <ul class="lista-promocoes">
+
+                <li class="card-promocao rosa">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut4-fundo.png" alt="Donout de Céu Azul">
+                    <h3>Céu Azul</h3>
+                    <p>Donut com cobertura azul suave sabor baunilha, decorado com confeitos coloridos que lembram
+                        nuvens no céu. Leve, doce e encantador!</p>
+                    <p class="preco" id="preco1">Preço R$ 5,00</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (85+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+                <li class="card-promocao lilas">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut5-fundo.png" alt="Donout de Caramelo">
+                    <h3>Toffee Caramelo</h3>
+                    <p>Donut com cobertura cremosa de caramelo toffee e um leve toque amanteigado que derrete na boca.
+                        Um clássico irresistível!</p>
+                    <p class="preco-atual" id="preco2">Preço R$ 6,00</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (50+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+                <li class="card-promocao azul">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut6-fundo.png" alt="Donout de Vanilla">
+                    <h3>Pink Vanilla</h3>
+                    <p>Donut com cobertura suave de baunilha e gotas de morango por cima, trazendo um toque delicado e
+                        frutado a cada mordida./p>
+                    <p class="preco-atual" id="preco3">Preço R$ 5,00</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (122+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+            </ul>
+
+            <ul class="lista-promocoes">
+
+                <li class="card-promocao rosa">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut7-fundo.png" alt="Donout de Uva">
+                    <h3>Doce Violeta</h3>
+                    <p>Donut com cobertura sabor uva e acabamento cintilante de glacê roxo. Um toque frutado e divertido
+                        que encanta os olhos e o paladar.</p>
+                    <p class="preco" id="preco1">Preço R$ 5,00</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (75+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+                <li class="card-promocao lilas">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut8-fundo.png" alt="Donout de Morango com Ninho">
+                    <h3>Morango Ninho</h3>
+                    <p>Donut macio com recheio cremoso de leite Ninho e cobertura de geleia de morango, trazendo uma
+                        combinação doce e refrescante.</p>
+                    <p class="preco-atual" id="preco2">Preço R$ 6,00<p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (150+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+                <li class="card-promocao azul">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut9-fundo.png" alt="Donout de Frutas Vermelhas">
+                    <h3>Frutas Vermelhas</h3>
+                    <p>Donut macio com cobertura de creme suave e calda de frutas vermelhas, trazendo um sabor levemente
+                        ácido e doce, com pedaços suculentos de morango, amora e framboesa.</p>
+                    <p class="preco-atual" id="preco3">Por R$ 6,00</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (48+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+            </ul>
+
+            <ul class="lista-promocoes">
+
+                <li class="card-promocao rosa">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut10-fundo.png"
+                        alt="Donout de Chocolate Tradicional">
+                    <h3>Chocolate Tradicional</h3>
+                    <p>Donut fofinho com cobertura cremosa de chocolate ao leite, trazendo aquele sabor clássico, doce e
+                        irresistível que derrete na boca.</p>
+                    <p class="preco" id="preco1">Preço R$ 4,00</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (150+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+                <li class="card-promocao lilas">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut11-fundo.png" alt="Donut de Morango com Ninho">
+                    <h3>Morango Ninho</h3>
+                    <p>Donut macio com recheio cremoso de leite Ninho e cobertura de geleia de morango, trazendo uma
+                        combinação doce e refrescante.</p>
+                    <p class="preco-atual" id="preco2">Por R$ 5,00</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (100+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+                <li class="card-promocao azul">
+                    <img src="./imagens/Produtos-Projeto-Integrador/donut12-fundo.png" alt="Donout de Nutella">
+                    <h3>Nutelíssimo</h3>
+                    <p>Donut macio com recheio generoso de Nutella e cobertura de chocolate com avelã, finalizado com
+                        raspas de chocolate. Uma explosão de sabor para os amantes da famosa cremosa.</p>
+                    <p class="preco-atual" id="preco3">Por R$ 6,00</p>
+                    <p class="avaliacao">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                        </svg>
+                        (245+)
+                    </p>
+                    <section class="botoes">
+                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
+                        <button class="ver-mais">Ver mais</button>
+                    </section>
+                </li>
+
+            </ul>
+        </section>
+
+        <!-- Card -->
+        <section class="card-newsletter" aria-labelledby="card-titulo">
+            <span class="elemento-card elemento-card-1" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-2" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-3" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-4" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-5" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-6" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-7" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-8" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-10" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-11" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-12" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-13" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-14" aria-hidden="true"></span>
+            <span class="elemento-card elemento-card-15" aria-hidden="true"></span>
+            <span class="card-fundo-roxo" aria-hidden="true"></span>
+
+            <article class="conteudo-card">
+                <h1 id="card-titulo" class="titulo-card">
+                    Fique por dentro das novidades!
+                </h1>
+                <p class="descricao-card">
+                    Descubra em primeira mão o que está saindo do nosso forno!
+                    Cadastre-se para receber novidades, coleções especiais e conteúdos deliciosos.
+                </p>
+            </article>
+
+            <form class="formulario-card" aria-label="Formulário de inscrição para newsletter">
+                <label for="campo-email" class="oculto-visual">Seu endereço de e-mail</label>
+                <input type="email" id="campo-email" name="email" placeholder="E-mail" class="campo-input-card" required
+                    aria-required="true">
+                <button type="submit" class="botao-card">Inscrever-se</button>
+            </form>
+        </section>
+
+
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <nav aria-label="Rodapé principal">
+            <!-- Logo e redes sociais -->
+            <section aria-labelledby="footer-junte">
+                <img src="./imagens/logo2.png" alt="Logo Candy Lovers com chantilly e cereja" class="logo-footer">
+                <p id="footer-junte"><strong>Junte-se a nós</strong></p>
+                <address>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-tiktok" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                </address>
+            </section>
+
+            <!-- Suporte -->
+            <section aria-labelledby="footer-suporte">
+                <h2 id="footer-suporte">Suporte</h2>
+                <ul>
+                    <li><a href="#">SAQ</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Dúvidas Frequentes</a></li>
+                    <li><a href="#">Fale Conosco</a></li>
+                </ul>
+            </section>
+
+            <!-- Institucional -->
+            <section aria-labelledby="footer-institucional">
+                <h2 id="footer-institucional">Institucional</h2>
+                <ul>
+                    <li><a href="#">Nossa Loja</a></li>
+                    <li><a href="#">Políticas de Privacidade</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Políticas de Entregas</a></li>
+                </ul>
+            </section>
+
+            <!-- Formas de Pagamento -->
+            <section class="pagamento" aria-labelledby="footer-pagamento">
+                <h2 id="footer-pagamento">Formas de Pagamento</h2>
+                <ul>
+                    <li><img src="./imagens/cartao-elo.png" alt="Elo" class="cartao-elo"></li>
+                    <li><img src="./imagens/cartao-visa.png" alt="Visa"></li>
+                    <li><img src="./imagens/cartao-mastercard.png" alt="Mastercard"></li>
+                    <li><img src="./imagens/pix.png" alt="Pix"></li>
+                </ul>
+            </section>
+        </nav>
+
+        <div class="rodape-final">
+            <p>© 2025 candylovers. Todos os direitos reservados.</p>
+            <span class="idioma" role="button" aria-label="Alterar idioma">Português <span aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                        <path
+                            d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                    </svg>
+                </span>
+            </span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

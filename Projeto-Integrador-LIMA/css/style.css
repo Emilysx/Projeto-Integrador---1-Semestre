@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -124,30 +125,55 @@ nav[aria-label="Menu principal"] ul li a {
     margin: 0 auto;
     opacity: 0;
     animation: troca-banner 10s infinite;
-    display: flex;     
-    align-items: flex-start;     
-    justify-content: center;       
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.banner:nth-child(1) { animation-delay: 0s; }
-.banner:nth-child(2) { animation-delay: 3s; }
-.banner:nth-child(3) { animation-delay: 6s; }
+.banner:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.banner:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.banner:nth-child(3) {
+    animation-delay: 6s;
+}
 
 .banner img {
-    max-width: 100%;     /* evita que a imagem ocupe 100%, deixando uma margem */
-    object-fit: contain; /* mantém proporção sem cortar */
-    border-radius: 20px; 
+    max-width: 100%;
+    /* evita que a imagem ocupe 100%, deixando uma margem */
+    object-fit: contain;
+    /* mantém proporção sem cortar */
+    border-radius: 20px;
     display: block;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes troca-banner {
-    0% { opacity: 0; }
-    5% { opacity: 1; }
-    30% { opacity: 1; }
-    35% { opacity: 0; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    35% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
+
 .categorias nav ul {
     list-style: none;
     display: flex;
@@ -163,7 +189,8 @@ nav[aria-label="Menu principal"] ul li a {
     text-align: center;
     padding: 10px 20px;
     margin-top: 0;
-    max-width: 1200px;   /* Mesma largura máxima do carrossel */
+    max-width: 1200px;
+    /* Mesma largura máxima do carrossel */
     margin-left: auto;
     margin-right: auto;
 }
@@ -177,20 +204,25 @@ nav[aria-label="Menu principal"] ul li a {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 30px;              /* Espaço entre as categorias */
+    gap: 30px;
+    /* Espaço entre as categorias */
     flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
 
 .categorias nav ul li {
-    flex: 1 1 200px;         /* Faz os quadrados ocuparem um bom espaço e se ajustarem no wrap */
-    max-width: 200px;        /* Largura máxima de cada quadrado */
+    flex: 1 1 200px;
+    /* Faz os quadrados ocuparem um bom espaço e se ajustarem no wrap */
+    max-width: 200px;
+    /* Largura máxima de cada quadrado */
 }
 
 .categorias a {
-    width: 180px;            /* Largura dos quadrados */
-    height: 180px;           /* Altura dos quadrados */
+    width: 180px;
+    /* Largura dos quadrados */
+    height: 180px;
+    /* Altura dos quadrados */
     text-decoration: none;
     color: #1E1E1E;
     display: flex;
@@ -246,18 +278,37 @@ nav[aria-label="Menu principal"] ul li a {
 .promocoes-semana {
     text-align: center;
     padding: 30px 20px;
-    
+
 }
 
 .promocoes-semana h2 {
     font-size: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.titulo-com-linha {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #362c27;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 0 1rem;
+}
+
+.titulo-com-linha::before,
+.titulo-com-linha::after {
+    content: "";
+    flex: 1;
+    border-top: 2px solid #e968a2;
+    margin: 0 1rem;
 }
 
 .lista-promocoes {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -268,7 +319,7 @@ nav[aria-label="Menu principal"] ul li a {
     width: 250px;
     padding: 15px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
@@ -300,8 +351,10 @@ nav[aria-label="Menu principal"] ul li a {
     color: #0e1c34;
 }
 
-#preco1, #preco2, #preco3 {
-    font-size:22px;
+#preco1,
+#preco2,
+#preco3 {
+    font-size: 22px;
     font-weight: bolder;
 }
 
@@ -358,28 +411,31 @@ button.ver-mais:hover {
 
 /* Cores de fundo de cada card */
 .card-promocao.rosa {
-    width:320px;
+    width: 320px;
     background-color: #FBD5E8;
     padding: 1.5rem;
     padding-top: 0;
 }
+
 .card-promocao.lilas {
-    width:320px;
+    width: 320px;
     background-color: #DABDFF;
     padding: 1.5rem;
     padding-top: 0;
 }
+
 .card-promocao.azul {
-    width:320px;
+    width: 320px;
     background-color: #DBF0FF;
     padding: 1.5rem;
     padding-top: 0;
 }
+
 #sobre-nos {
     background-color: #FBD5E8;
     padding: 10px 20px;
     border-radius: 15px;
-    margin: 30px auto;
+    margin: 10px auto;
     max-width: 1170px;
     position: relative;
     text-align: left;
@@ -393,14 +449,15 @@ button.ver-mais:hover {
     border-radius: 8px;
     font-size: 24px;
     margin-bottom: 20px;
-} 
+}
+
 #sobre-nos p {
     font-size: 16px;
     line-height: 1.6;
     color: #333;
     margin-bottom: 20px;
     margin-right: 20%;
-    
+
 }
 
 #sobre-nos img {
@@ -460,7 +517,7 @@ button.ver-mais:hover {
     background-color: #fff3c7;
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* Títulos */
@@ -534,8 +591,10 @@ button:focus {
 
 /* card */
 .card-newsletter {
-    max-width: 1280px; /* Alinha com a largura da seção "Sobre nós" */
-    margin: 0 auto; /* Centraliza */
+    max-width: 1280px;
+    /* Alinha com a largura da seção "Sobre nós" */
+    margin: 0 auto;
+    /* Centraliza */
     margin-top: 5%;
     position: relative;
     height: 316px;
@@ -648,72 +707,95 @@ button:focus {
     background-size: contain;
     z-index: 1;
 }
-.elemento-card-1 { /* teste1 (Originalmente 'teste1' com width: 471px, height: 471px, left: 1214px, top: 50px) */
+
+.elemento-card-1 {
+    /* teste1 (Originalmente 'teste1' com width: 471px, height: 471px, left: 1214px, top: 50px) */
     width: 471px;
     height: 471px;
     left: 1214px;
     top: 50px;
     background-image: url('../imagens/Produtos-Projeto-Integrador/granulado.png');
 }
-.elemento-card-2 { /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 1254px, top: -192px) */
+
+.elemento-card-2 {
+    /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 1254px, top: -192px) */
     width: 392px;
     height: 392px;
     left: 1254px;
     top: -192px;
     background-image: url('../imagens/Produtos-Projeto-Integrador/granulado.png');
 }
-.elemento-card-3 { /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 1058px, top: -263px) */
+
+.elemento-card-3 {
+    /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 1058px, top: -263px) */
     width: 392px;
     height: 392px;
     left: 1058px;
     top: -263px;
     background-image: url('../imagens/Produtos-Projeto-Integrador/granulado.png');
 }
-.elemento-card-4 { /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 950px, top: -213px) */
+
+.elemento-card-4 {
+    /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 950px, top: -213px) */
     width: 392px;
     height: 392px;
     left: 950px;
     top: -213px;
     background-image: url('../imagens/Produtos-Projeto-Integrador/granulado.png');
 }
-.elemento-card-5 { /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 1085px, top: 4px) */
+
+.elemento-card-5 {
+    /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 1085px, top: 4px) */
     width: 392px;
     height: 392px;
     left: 1085px;
     top: 4px;
     background-image: url('../imagens/Produtos-Projeto-Integrador/granulado.png');
 }
-.elemento-card-6 { /* 89 (Originalmente '89' com width: 88.72px, height: 88.72px, left: 1394.38px, top: 224.06px, rotate(-10.18deg)) */
+
+.elemento-card-6 {
+    /* 89 (Originalmente '89' com width: 88.72px, height: 88.72px, left: 1394.38px, top: 224.06px, rotate(-10.18deg)) */
     width: 88.72px;
     height: 88.72px;
     left: 1210.38px;
     top: 224.06px;
-    background-image: url('../imagens/Produtos-Projeto-Integrador/donut-2.png'); /* Usando 2.png como exemplo, ajuste se for outro */
+    background-image: url('../imagens/Produtos-Projeto-Integrador/donut-2.png');
+    /* Usando 2.png como exemplo, ajuste se for outro */
     transform: rotate(-10.18deg);
 }
-.elemento-card-7 { /* 89 (Originalmente '89' com width: 128.58px, height: 128.58px, left: 1324.46px, top: 218.97px, rotate(73.78deg)) */
+
+.elemento-card-7 {
+    /* 89 (Originalmente '89' com width: 128.58px, height: 128.58px, left: 1324.46px, top: 218.97px, rotate(73.78deg)) */
     width: 128.58px;
     height: 128.58px;
     left: 1000.46px;
     top: 218.97px;
-    background-image: url('../imagens/Produtos-Projeto-Integrador/donut-8.png'); /* Usando 8.png como exemplo, ajuste se for outro */
+    background-image: url('../imagens/Produtos-Projeto-Integrador/donut-8.png');
+    /* Usando 8.png como exemplo, ajuste se for outro */
     transform: rotate(73.78deg);
 }
-.elemento-card-8 { /* 91 (Originalmente '91' com width: 128px, height: 128px, left: 1386px, top: 50px) */
+
+.elemento-card-8 {
+    /* 91 (Originalmente '91' com width: 128px, height: 128px, left: 1386px, top: 50px) */
     width: 128px;
     height: 128px;
     left: 1100px;
     top: 50px;
-    background-image: url('../imagens/Produtos-Projeto-Integrador/donut-3.png'); /* Usando 3.png como exemplo, ajuste se for outro */
+    background-image: url('../imagens/Produtos-Projeto-Integrador/donut-3.png');
+    /* Usando 3.png como exemplo, ajuste se for outro */
 }
-.elemento-card-10 { /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: -175px, top: -161px) */
+
+.elemento-card-10 {
+    /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: -175px, top: -161px) */
     width: 392px;
     height: 392px;
     left: -175px;
     top: -161px;
     background-image: url('../imagens/Produtos-Projeto-Integrador/granulado.png');
 }
-.elemento-card-11 { /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 41.61px, top: 21px, rotate(60.63deg)) */
+
+.elemento-card-11 {
+    /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 41.61px, top: 21px, rotate(60.63deg)) */
     width: 392px;
     height: 392px;
     left: 41.61px;
@@ -721,7 +803,9 @@ button:focus {
     background-image: url('../imagens/Produtos-Projeto-Integrador/granulado.png');
     transform: rotate(60.63deg);
 }
-.elemento-card-12 { /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 58.08px, top: 159.05px, rotate(11.78deg)) */
+
+.elemento-card-12 {
+    /* teste1 (Originalmente 'teste1' com width: 392px, height: 392px, left: 58.08px, top: 159.05px, rotate(11.78deg)) */
     width: 392px;
     height: 392px;
     left: 58.08px;
@@ -729,26 +813,313 @@ button:focus {
     background-image: url('../imagens/Produtos-Projeto-Integrador/granulado.png');
     transform: rotate(11.78deg);
 }
-.elemento-card-13 { /* 93 (Originalmente '93' com width: 95.03px, height: 95.03px, left: 1302px, top: 164.14px, rotate(-28.36deg)) */
+
+.elemento-card-13 {
+    /* 93 (Originalmente '93' com width: 95.03px, height: 95.03px, left: 1302px, top: 164.14px, rotate(-28.36deg)) */
     width: 95.03px;
     height: 95.03px;
     left: 1100px;
     top: 164.14px;
-    background-image: url('../imagens/Produtos-Projeto-Integrador/milkshake-10.png'); /* Usando 20.png como exemplo, ajuste se for outro */
+    background-image: url('../imagens/Produtos-Projeto-Integrador/milkshake-10.png');
+    /* Usando 20.png como exemplo, ajuste se for outro */
     transform: rotate(-28.36deg);
 }
-.elemento-card-14 { /* 89 (Originalmente '89' com width: 60px, height: 60px, left: 1437px, top: -17px) */
+
+.elemento-card-14 {
+    /* 89 (Originalmente '89' com width: 60px, height: 60px, left: 1437px, top: -17px) */
     width: 60px;
     height: 60px;
     left: 1437px;
     top: -17px;
-    background-image: url('../imagens/Produtos-Projeto-Integrador/donut-9.png'); /* Usando 9.png como exemplo, ajuste se for outro */
+    background-image: url('../imagens/Produtos-Projeto-Integrador/donut-9.png');
+    /* Usando 9.png como exemplo, ajuste se for outro */
 }
-.elemento-card-15 { /* 90 (Originalmente '90' com width: 87.15px, height: 87.15px, left: 1144px, top: 50.39px, rotate(-18.31deg)) */
+
+.elemento-card-15 {
+    /* 90 (Originalmente '90' com width: 87.15px, height: 87.15px, left: 1144px, top: 50.39px, rotate(-18.31deg)) */
     width: 87.15px;
     height: 87.15px;
     left: 950px;
     top: 50.39px;
-    background-image: url('../imagens/Produtos-Projeto-Integrador/milkshake-9.png'); /* Usando 19.png como exemplo, ajuste se for outro */
+    background-image: url('../imagens/Produtos-Projeto-Integrador/milkshake-9.png');
+    /* Usando 19.png como exemplo, ajuste se for outro */
     transform: rotate(-18.31deg);
+}
+
+
+footer {
+    margin-top: 60px;
+    background-color: #a8d1ec;
+    color: #1f3344;
+    padding: 2rem 0rem 0;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Seções internas do footer */
+footer section {
+    flex: 1 1 150px;
+    min-width: 150px;
+}
+
+.logo-footer {
+    width: 230px;
+    /* Ajuste o tamanho da logo */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    display: block;
+    /* Garante controle de margem */
+    margin-bottom: 10px;
+    /* Espaço entre a logo e os elementos abaixo */
+}
+
+footer section h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+footer section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer section ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer section ul li a {
+    text-decoration: none;
+    color: #1f3344;
+    font-size: 0.95rem;
+}
+
+/* Social icons */
+footer address ul {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0;
+    margin-top: 0.8rem;
+}
+
+address svg {
+    width: 24px;
+    /* Novo tamanho */
+    height: 24px;
+}
+
+/* Logos de pagamento */
+.pagamento ul {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.pagamento ul li img {
+    height: 32px;
+}
+
+.cartao-elo {
+    border-radius: 4px;
+}
+
+/* Linha inferior rosa */
+footer .rodape-final {
+    background-color: #e968a2;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    padding: 0.6rem 1rem;
+    position: relative;
+}
+
+footer .rodape-final p {
+    margin: 0;
+}
+
+/* Botão idioma */
+footer .idioma {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #e968a2;
+    border-radius: 3px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+/*CSS do login*/
+#tela-login {
+    height: 75%;
+    background: linear-gradient(135deg, #FF9ECF 15%, #B990EF 50%, #BFE3FC 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.4rem;
+}
+
+.caixa-login {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    width: 600px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-login {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.formulario-login {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 0%;
+    background: #fff;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.rotulo-campo {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.entrada-campo {
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #666;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+.entrada-campo:focus {
+    border-color: #FF9ECF;
+}
+
+.entrada-campo::placeholder {
+    color: #999;
+}
+
+.link-esqueci-senha {
+    align-self: flex-end;
+    color: #999;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.link-esqueci-senha:hover {
+    color: #666;
+}
+
+.botao-entrar {
+    background: linear-gradient(135deg, #FF9ECF 15%, #B990EF 50%, #BFE3FC 100%);
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s ease;
+}
+
+.botao-entrar:hover {
+    transform: translateY(-2px);
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    gap: 15px;
+}
+
+.linha-divisoria {
+    flex: 1;
+    height: 1px;
+    background: #e0e0e0;
+    border: none;
+}
+
+.texto-divisor {
+    color: #999;
+    font-size: 14px;
+}
+
+.login-social {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.botao-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    background: white;
+    color: #666;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+.login-social img {
+    width: 20px;
+    height: 20px;
+}
+.botao-social:hover {
+    border-color: #ccc;
+    background-color: #f9f9f9;
+}
+
+.texto-cadastro {
+    text-align: center;
+    margin-top: 25px;
+    color: #999;
+    font-size: 14px;
+    background: #fff;
+}
+
+.texto-cadastro a {
+    color: #ff9a9e;
+    text-decoration: none;
+}
+
+.texto-cadastro a:hover {
+    text-decoration: underline;
 }

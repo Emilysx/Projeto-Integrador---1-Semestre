@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login do Usuario</title>
+</head>
+
+<body id="tela-login">
+    <main class="caixa-login" role="main" aria-labelledby="titulo-login">
+        <h1 id="titulo-login" class="titulo-login">Login</h1>
+
+        <form class="formulario-login" action="#" method="post">
+
+            <section class="grupo-campo">
+                <label class="rotulo-campo" for="campo-email">Email</label>
+                <input class="entrada-campo" type="email" id="campo-email" name="email"
+                    placeholder="Entre com seu Email" required aria-required="true">
+            </section>
+
+            <section class="grupo-campo">
+                <label class="rotulo-campo" for="campo-senha">Senha</label>
+                <input class="entrada-campo" type="password" id="campo-senha" name="senha"
+                    placeholder="Entre com sua Senha" required aria-required="true">
+                <a href="#" class="link-esqueci-senha">Esqueceu sua senha?</a>
+            </section>
+
+            <button type="submit" class="botao-entrar">Entrar</button>
+        </form>
+
+        <section class="divisor">
+            <hr class="linha-divisoria">
+            <span class="texto-divisor">ou</span>
+            <hr class="linha-divisoria">
+        </section>
+
+        <section class="login-social">
+            <a href="#" class="botao-social google">
+                <figure>
+                    <img src="./imagens/google.png" alt="Logo do Google">
+                </figure>
+                Entre com o Google
+            </a>
+
+            <a href="#" class="botao-social apple">
+                <figure>
+                    <img src="./imagens/apple.png" alt="Logo da Apple">
+                </figure>
+                Entre com o Apple
+            </a>
+        </section>
+
+        <footer class="texto-cadastro">
+            Não tem conta? <a href="#">Se cadastre-se</a>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
