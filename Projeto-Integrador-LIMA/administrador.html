@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>administrador</title>
+</head>
+
+<body>
+     <main class="conteudo-administrador">
+        <header class="cabecalho-adm">
+            <section class="info-admin">
+                <h1 class="titulo-painel">Painel Administrativo</h1>
+                <p class="subtitulo-painel">Gerencie os produtos da sua donuteria</p>
+            </section>
+            <section class="acoes-cabecalho">
+                <button type="button" class="botao-adicionar-produto">
+                    <span class="icone-adicionar">+</span>
+                    Adicionar Produto
+                </button>
+                <button type="button" class="botao-sair-admin">
+                    <span class="icone-sair">🚪</span>
+                    Sair
+                </button>
+            </section>
+        </header>
+
+        <section class="container-admin">
+            <aside class="painel-lateral-adm">
+                <nav class="navegacao-admin">
+                    <h2 class="titulo-navegacao">Menu Administrativo</h2>
+                    <ul class="lista-navegacao">
+                        <li class="item-navegacao">
+                            <button type="button" class="botao-navegacao ativo">
+                                <span class="icone-nav">🍩</span>
+                                Produtos
+                            </button>
+                        </li>
+                        <li class="item-navegacao">
+                            <button type="button" class="botao-navegacao">
+                                <span class="icone-nav">📊</span>
+                                Relatórios
+                            </button>
+                        </li>
+                        <li class="item-navegacao">
+                            <button type="button" class="botao-navegacao">
+                                <span class="icone-nav">📦</span>
+                                Pedidos
+                            </button>
+                        </li>
+                        <li class="item-navegacao">
+                            <button type="button" class="botao-navegacao">
+                                <span class="icone-nav">⚙️</span>
+                                Configurações
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section class="estatisticas-rapidas">
+                    <h3 class="titulo-estatisticas">Estatísticas Rápidas</h3>
+                    <article class="card-estatistica">
+                        <span class="numero-estatistica">24</span>
+                        <span class="label-estatistica">Produtos Ativos</span>
+                    </article>
+                    <article class="card-estatistica">
+                        <span class="numero-estatistica">156</span>
+                        <span class="label-estatistica">Vendas Hoje</span>
+                    </article>
+                    <article class="card-estatistica">
+                        <span class="numero-estatistica">R$ 2.340</span>
+                        <span class="label-estatistica">Faturamento</span>
+                    </article>
+                </section>
+            </aside>
+
+            <main class="area-principal-adm">
+                <section class="controles-produtos">
+                    <section class="filtros-busca">
+                        <label for="buscar-produto" class="rotulo-busca">Buscar Produto:</label>
+                        <input type="search" id="buscar-produto" class="campo-busca" placeholder="Digite o nome do produto..." />
+                        
+                        <label for="filtro-categoria" class="rotulo-filtro">Categoria:</label>
+                        <select id="filtro-categoria" class="campo-filtro">
+                            <option value="">Todas as Categorias</option>
+                            <option value="donuts">Donuts</option>
+                            <option value="milkshakes">Milkshakes</option>
+                            <option value="bebidas">Bebidas</option>
+                            <option value="combos">Combos</option>
+                        </select>
+
+                        <label for="filtro-status" class="rotulo-filtro">Status:</label>
+                        <select id="filtro-status" class="campo-filtro">
+                            <option value="">Todos os Status</option>
+                            <option value="ativo">Ativo</option>
+                            <option value="inativo">Inativo</option>
+                            <option value="esgotado">Esgotado</option>
+                        </select>
+                    </section>
+                </section>
+
+                <section class="tabela-produtos">
+                    <table class="lista-produtos-adm">
+                        <caption class="titulo-tabela">Lista de Produtos Cadastrados</caption>
+                        <thead class="cabecalho-tabela">
+                            <tr class="linha-cabecalho">
+                                <th class="coluna-imagem">Imagem</th>
+                                <th class="coluna-nome">Nome do Produto</th>
+                                <th class="coluna-categoria">Categoria</th>
+                                <th class="coluna-preco">Preço</th>
+                                <th class="coluna-estoque">Estoque</th>
+                                <th class="coluna-status">Status</th>
+                                <th class="coluna-acoes">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody class="corpo-tabela">
+                            <tr class="linha-produto">
+                                <td class="celula-imagem">
+                                    <figure class="container-imagem-produto">
+                                        <img src="https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Donut Chocolate & Baunilha" class="imagem-produto-tabela" />
+                                    </figure>
+                                </td>
+                                <td class="celula-nome">
+                                    <strong class="nome-produto-tabela">Donut Chocolate & Baunilha</strong>
+                                    <p class="descricao-resumida">Donut com cobertura dupla</p>
+                                </td>
+                                <td class="celula-categoria">
+                                    <span class="badge-categoria donuts">Donuts</span>
+                                </td>
+                                <td class="celula-preco">
+                                    <span class="preco-produto-tabela">R$ 5,50</span>
+                                </td>
+                                <td class="celula-estoque">
+                                    <span class="quantidade-estoque">45</span>
+                                </td>
+                                <td class="celula-status">
+                                    <span class="badge-status ativo">Ativo</span>
+                                </td>
+                                <td class="celula-acoes">
+                                    <section class="grupo-acoes">
+                                        <button type="button" class="botao-acao editar" title="Editar produto">
+                                            <span class="icone-acao">✏️</span>
+                                        </button>
+                                        <button type="button" class="botao-acao duplicar" title="Duplicar produto">
+                                            <span class="icone-acao">📋</span>
+                                        </button>
+                                        <button type="button" class="botao-acao excluir" title="Excluir produto">
+                                            <span class="icone-acao">🗑️</span>
+                                        </button>
+                                    </section>
+                                </td>
+                            </tr>
+
+                            <tr class="linha-produto">
+                                <td class="celula-imagem">
+                                    <figure class="container-imagem-produto">
+                                        <img src="https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Milkshake Morango" class="imagem-produto-tabela" />
+                                    </figure>
+                                </td>
+                                <td class="celula-nome">
+                                    <strong class="nome-produto-tabela">Milkshake Morango</strong>
+                                    <p class="descricao-resumida">Milkshake cremoso de morango</p>
+                                </td>
+                                <td class="celula-categoria">
+                                    <span class="badge-categoria milkshakes">Milkshakes</span>
+                                </td>
+                                <td class="celula-preco">
+                                    <span class="preco-produto-tabela">R$ 8,50</span>
+                                </td>
+                                <td class="celula-estoque">
+                                    <span class="quantidade-estoque">23</span>
+                                </td>
+                                <td class="celula-status">
+                                    <span class="badge-status ativo">Ativo</span>
+                                </td>
+                                <td class="celula-acoes">
+                                    <section class="grupo-acoes">
+                                        <button type="button" class="botao-acao editar" title="Editar produto">
+                                            <span class="icone-acao">✏️</span>
+                                        </button>
+                                        <button type="button" class="botao-acao duplicar" title="Duplicar produto">
+                                            <span class="icone-acao">📋</span>
+                                        </button>
+                                        <button type="button" class="botao-acao excluir" title="Excluir produto">
+                                            <span class="icone-acao">🗑️</span>
+                                        </button>
+                                    </section>
+                                </td>
+                            </tr>
+
+                            <tr class="linha-produto">
+                                <td class="celula-imagem">
+                                    <figure class="container-imagem-produto">
+                                        <img src="https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Donut Glazed Clássico" class="imagem-produto-tabela" />
+                                    </figure>
+                                </td>
+                                <td class="celula-nome">
+                                    <strong class="nome-produto-tabela">Donut Glazed Clássico</strong>
+                                    <p class="descricao-resumida">O tradicional donut glazed</p>
+                                </td>
+                                <td class="celula-categoria">
+                                    <span class="badge-categoria donuts">Donuts</span>
+                                </td>
+                                <td class="celula-preco">
+                                    <span class="preco-produto-tabela">R$ 4,00</span>
+                                </td>
+                                <td class="celula-estoque">
+                                    <span class="quantidade-estoque">12</span>
+                                </td>
+                                <td class="celula-status">
+                                    <span class="badge-status esgotado">Esgotado</span>
+                                </td>
+                                <td class="celula-acoes">
+                                    <section class="grupo-acoes">
+                                        <button type="button" class="botao-acao editar" title="Editar produto">
+                                            <span class="icone-acao">✏️</span>
+                                        </button>
+                                        <button type="button" class="botao-acao duplicar" title="Duplicar produto">
+                                            <span class="icone-acao">📋</span>
+                                        </button>
+                                        <button type="button" class="botao-acao excluir" title="Excluir produto">
+                                            <span class="icone-acao">🗑️</span>
+                                        </button>
+                                    </section>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="paginacao-adm">
+                    <p class="info-paginacao">Mostrando 3 de 24 produtos</p>
+                    <nav class="controles-paginacao">
+                        <button type="button" class="botao-paginacao anterior" disabled>Anterior</button>
+                        <button type="button" class="botao-paginacao numero ativo">1</button>
+                        <button type="button" class="botao-paginacao numero">2</button>
+                        <button type="button" class="botao-paginacao numero">3</button>
+                        <button type="button" class="botao-paginacao proximo">Próximo</button>
+                    </nav>
+                </section>
+            </main>
+        </section>
+
+        <!-- Modal para Adicionar/Editar Produto -->
+        <section class="modal-produto" id="modal-produto" hidden>
+            <article class="conteudo-modal">
+                <header class="cabecalho-modal">
+                    <h2 class="titulo-modal">Adicionar Novo Produto</h2>
+                    <button type="button" class="botao-fechar-modal" title="Fechar modal">×</button>
+                </header>
+
+                <form class="formulario-produto">
+                    <section class="secao-formulario">
+                        <h3 class="titulo-secao-form">Informações Básicas</h3>
+                        
+                        <section class="linha-campos-adm">
+                            <section class="campo-formulario-adm">
+                                <label for="nome-produto" class="rotulo-campo-adm">Nome do Produto</label>
+                                <input type="text" id="nome-produto" class="entrada-texto-adm" placeholder="Digite o nome do produto" required />
+                            </section>
+                            
+                            <section class="campo-formulario-adm">
+                                <label for="categoria-produto" class="rotulo-campo-adm">Categoria</label>
+                                <select id="categoria-produto" class="entrada-selecao-adm" required>
+                                    <option value="">Selecione uma categoria</option>
+                                    <option value="donuts">Donuts</option>
+                                    <option value="milkshakes">Milkshakes</option>
+                                    <option value="bebidas">Bebidas</option>
+                                    <option value="combos">Combos</option>
+                                </select>
+                            </section>
+                        </section>
+
+                        <section class="campo-formulario-adm">
+                            <label for="descricao-produto" class="rotulo-campo-adm">Descrição</label>
+                            <textarea id="descricao-produto" class="area-texto-adm" rows="3" placeholder="Descreva o produto..."></textarea>
+                        </section>
+
+                        <section class="linha-campos-adm">
+                            <section class="campo-formulario-adm">
+                                <label for="preco-produto" class="rotulo-campo-adm">Preço (R$)</label>
+                                <input type="number" id="preco-produto" class="entrada-texto-adm" step="0.01" min="0" placeholder="0,00" required />
+                            </section>
+                            
+                            <section class="campo-formulario-adm">
+                                <label for="estoque-produto" class="rotulo-campo-adm">Quantidade em Estoque</label>
+                                <input type="number" id="estoque-produto" class="entrada-texto-adm" min="0" placeholder="0" required />
+                            </section>
+                            
+                            <section class="campo-formulario-adm">
+                                <label for="status-produto" class="rotulo-campo-adm">Status</label>
+                                <select id="status-produto" class="entrada-selecao-adm" required>
+                                    <option value="ativo">Ativo</option>
+                                    <option value="inativo">Inativo</option>
+                                    <option value="esgotado">Esgotado</option>
+                                </select>
+                            </section>
+                        </section>
+                    </section>
+
+                    <section class="secao-formulario">
+                        <h3 class="titulo-secao-form">Imagem do Produto</h3>
+                        
+                        <section class="campo-formulario-adm">
+                            <label for="imagem-produto" class="rotulo-campo-adm">URL da Imagem</label>
+                            <input type="url" id="imagem-produto" class="entrada-texto-adm" placeholder="https://exemplo.com/imagem.jpg" />
+                        </section>
+                        
+                        <section class="preview-imagem">
+                            <figure class="container-preview">
+                                <img src="https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop" alt="Preview do produto" class="imagem-preview" />
+                            </figure>
+                        </section>
+                    </section>
+
+                    <section class="acoes-modal">
+                        <button type="button" class="botao-cancelar-modal">Cancelar</button>
+                        <button type="submit" class="botao-salvar-produto">Salvar Produto</button>
+                    </section>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

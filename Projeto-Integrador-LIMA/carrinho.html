@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Detalhe de Produto</title>
+    <title>Carrinho</title>
 </head>
 
 <body>
@@ -49,167 +49,150 @@
 
     <nav aria-label="Menu principal">
         <ul>
-            <li><a href="index.html #sobre-nos">Sobre nós</a></li>
-            <li><a href="index.html #contato-entrega">Contato</a></li>
-            <li><a href="index.html #contato-entrega">Entrega</a></li>
+            <li><a href="#sobre-nos">Sobre nós</a></li>
+            <li><a href="#contato-entrega">Contato</a></li>
+            <li><a href="#contato-entrega">Entrega</a></li>
             <li><a href="produtos-todos.html">Produtos</a></li>
             <li><a href="cadastro.html">Cadastrar-se</a></li>
         </ul>
     </nav>
 
-    <!-- Conteúdo Principal do Produto -->
-    <main class="detalhe-produto">
-        <a href="produtos-donuts.html" class="botao-voltar">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
-                <path
-                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
-            </svg>
-            Voltar
-        </a>
-        <section class="container-produto">
-            <!-- Seção da Imagem -->
-            <section class="secao-imagem">
-                <!-- Bolinhas decorativas -->
-                <span class="bolinha bolinha-vermelha"></span>
-                <span class="bolinha bolinha-azul"></span>
-                <span class="bolinha bolinha-verde"></span>
-                <span class="bolinha bolinha-rosa"></span>
+    <main class="conteudo-principal">
+        <header class="cabecalho-carrinho">
+            <a href="produtos-combos.html" class="botao-voltar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+                Voltar
+            </a>
+            <h1 class="titulo-carrinho">Meu Carrinho</h1>
+        </header>
 
-                <!-- Navegação da imagem -->
-                <button class="navegacao-imagem navegacao-esquerda">
-                    <span class="seta-esquerda"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                            <path
-                                d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-                        </svg></span>
-                </button>
-                <button class="navegacao-imagem navegacao-direita">
-                    <span class="seta-direita"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-                            <path
-                                d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                        </svg></span>
-                </button>
+        <section class="container-carrinho">
+            <article class="lista-produtos">
+                <h2 class="titulo-secao">Itens no Carrinho</h2>
 
-                <!-- Imagem do donut -->
-                <figure class="imagem-produto">
-                    <article class="donut">
-                        <img src="./imagens/Produtos-Projeto-Integrador/donut-3.png"
-                            alt="Donut de Baunilha e Chocolate">
-                    </article>
-                </figure>
-            </section>
+                <article class="item-produto">
+                    <figure class="imagem-produto">
+                        <img src="https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop"
+                            alt="Donut Chocolate & Baunilha" class="foto-produto" />
+                    </figure>
 
-            <!-- Seção das Informações -->
-            <section class="secao-informacoes">
-                <article class="informacoes-produto">
-                    <h1 class="titulo-produto">Dueto Chocolate & Baunilha</h1>
+                    <section class="detalhes-produto">
+                        <h3 class="nome-produto">Donut Chocolate & Baunilha</h3>
+                        <p class="descricao-produto">Donut macio coberto com chocolate cremoso</p>
+                        <p class="tamanho-produto">Tamanho: Médio</p>
 
-                    <p class="descricao-produto">
-                        Uma combinação irresistível! Nosso donut macio e fresquinho é generosamente coberto com
-                        chocolate ao leite cremoso, proporcionando uma explosão de sabor a cada mordida. Para tornar a
-                        experiência ainda mais especial, ele é finalizado com fios delicados de calda de baunilha
-                        artesanal, que adicionam um toque suave e adocicado ao paladar.
-                    </p>
-
-                    <p class="preco-produto">Preço R$ 5,50</p>
-
-                    <section class="area-quantidade">
-                        <h3 class="label-quantidade">Quantidade</h3>
-                        <fieldset class="controle-quantidade">
-                            <button class="botao-quantidade botao-diminuir">-</button>
-                            <span class="numero-quantidade">1</span>
-                            <button class="botao-quantidade botao-aumentar">+</button>
-                        </fieldset>
+                        <section class="avaliacao-produto">
+                            <span class="estrelas">⭐⭐⭐⭐⭐</span>
+                            <span class="nota-avaliacao">(4.8)</span>
+                        </section>
                     </section>
 
-                    <section class="avaliacao-produto">
-                        <span class="estrelas">
-                            <span class="estrela preenchida">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
-                            <span class="estrela preenchida">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
-                            <span class="estrela preenchida">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
-                            <span class="estrela preenchida">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
-                            <span class="estrela preenchida">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </span>
-                        </span>
-                        <span class="numero-avaliacoes">(75+)</span>
-                    </section>
+                    <section class="controles-item">
+                        <section class="quantidade-controle">
+                            <label for="quantidade-donut-1" class="rotulo-quantidade">Quantidade:</label>
+                            <button type="button" class="botao-diminuir" aria-label="Diminuir quantidade">-</button>
+                            <input type="number" id="quantidade-donut-1" class="campo-quantidade" value="2" min="1"
+                                max="10" aria-label="Quantidade do produto" />
+                            <button type="button" class="botao-aumentar" aria-label="Aumentar quantidade">+</button>
+                        </section>
 
-                    <section class="botoes-acao">
-                        <button class="botao-comprar">Comprar Agora</button>
-                        <button class="botao-adicionar-carrinho">Adicionar no Carrinho</button>
-                    </section>
+                        <p class="preco-item">R$ 11,00</p>
 
-                    <p class="info-frete">Frete fixo no valor de R$ 10,00</p>
+                        <button type="button" class="botao-remover" aria-label="Remover item do carrinho">
+                            <span class="icone-lixo">🗑️</span>
+                        </button>
+                    </section>
                 </article>
-            </section>
-        </section>
 
+                <article class="item-produto">
+                    <figure class="imagem-produto">
+                        <img src="https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg?auto=compress&cs=tinysrgb&w=120&h=120&fit=crop"
+                            alt="Milkshake Morango" class="foto-produto" />
+                    </figure>
 
-        <!-- Card -->
-        <section class="card-newsletter" aria-labelledby="card-titulo">
-            <span class="elemento-card elemento-card-1" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-2" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-3" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-4" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-5" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-6" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-7" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-8" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-10" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-11" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-12" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-13" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-14" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-15" aria-hidden="true"></span>
-            <span class="card-fundo-roxo" aria-hidden="true"></span>
+                    <section class="detalhes-produto">
+                        <h3 class="nome-produto">Milkshake Morango</h3>
+                        <p class="descricao-produto">Milkshake cremoso sabor morango</p>
+                        <p class="tamanho-produto">Tamanho: 400ml</p>
 
-            <article class="conteudo-card">
-                <h1 id="card-titulo" class="titulo-card">
-                    Fique por dentro das novidades!
-                </h1>
-                <p class="descricao-card">
-                    Descubra em primeira mão o que está saindo do nosso forno!
-                    Cadastre-se para receber novidades, coleções especiais e conteúdos deliciosos.
-                </p>
+                        <section class="avaliacao-produto">
+                            <span class="estrelas">⭐⭐⭐⭐⭐</span>
+                            <span class="nota-avaliacao">(4.9)</span>
+                        </section>
+                    </section>
+
+                    <section class="controles-item">
+                        <section class="quantidade-controle">
+                            <label for="quantidade-milkshake-1" class="rotulo-quantidade">Quantidade:</label>
+                            <button type="button" class="botao-diminuir" aria-label="Diminuir quantidade">-</button>
+                            <input type="number" id="quantidade-milkshake-1" class="campo-quantidade" value="1" min="1"
+                                max="10" aria-label="Quantidade do produto" />
+                            <button type="button" class="botao-aumentar" aria-label="Aumentar quantidade">+</button>
+                        </section>
+
+                        <p class="preco-item">R$ 8,50</p>
+
+                        <button type="button" class="botao-remover" aria-label="Remover item do carrinho">
+                            <span class="icone-lixo">🗑️</span>
+                        </button>
+                    </section>
+                </article>
             </article>
 
-            <form class="formulario-card" aria-label="Formulário de inscrição para newsletter">
-                <label for="campo-email" class="oculto-visual">Seu endereço de e-mail</label>
-                <input type="email" id="campo-email" name="email" placeholder="E-mail" class="campo-input-card" required
-                    aria-required="true">
-                <button type="submit" class="botao-card">Inscrever-se</button>
-            </form>
+            <aside class="resumo-pedido">
+                <h2 class="titulo-resumo">Resumo do Pedido</h2>
+
+                <section class="detalhes-resumo">
+                    <section class="linha-resumo">
+                        <span class="label-resumo">Subtotal:</span>
+                        <span class="valor-resumo">R$ 19,50</span>
+                    </section>
+
+                    <section class="linha-resumo">
+                        <span class="label-resumo">Taxa de entrega:</span>
+                        <span class="valor-resumo">R$ 3,50</span>
+                    </section>
+
+                    <section class="linha-resumo desconto">
+                        <span class="label-resumo">Desconto:</span>
+                        <span class="valor-resumo">- R$ 2,00</span>
+                    </section>
+
+                    <hr class="divisor-resumo" />
+
+                    <section class="linha-resumo total">
+                        <span class="label-resumo">Total:</span>
+                        <span class="valor-resumo">R$ 21,00</span>
+                    </section>
+                </section>
+
+                <section class="cupom-desconto">
+                    <h3 class="titulo-cupom">Cupom de Desconto</h3>
+                    <section class="campo-cupom">
+                        <label for="codigo-cupom" class="rotulo-cupom">Código do cupom:</label>
+                        <input type="text" id="codigo-cupom" class="entrada-cupom" placeholder="Digite seu cupom" />
+                        <button type="button" class="botao-aplicar-cupom">Aplicar</button>
+                    </section>
+                </section>
+
+                <section class="acoes-finalizacao">
+                    <button type="button" class="botao-continuar-comprando">
+                        Continuar Comprando
+                    </button>
+                    <button type="button" class="botao-finalizar-pedido">
+                        Finalizar Pedido
+                    </button>
+                </section>
+
+                <p class="info-frete">
+                    <span class="icone-info">ℹ️</span>
+                    Frete grátis para pedidos acima de R$ 25,00
+                </p>
+            </aside>
         </section>
     </main>
 
@@ -309,6 +292,7 @@
             </span>
         </div>
     </footer>
+
 
 </body>
 

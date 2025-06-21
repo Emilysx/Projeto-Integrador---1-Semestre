@@ -4,16 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Produtos-Donuts</title>
 </head>
 
 <body>
     <header>
-        <a href="#" aria-label="Página inicial">
+        <a href="index.html" aria-label="Página inicial">
             <img src="imagens/logo.png" alt="Logo Candy Lovers" class="logo">
         </a>
 
@@ -21,29 +18,41 @@
             <label for="search" class="visually-hidden">Pesquisar</label>
             <input type="search" id="search" name="search" placeholder="Pesquisar">
             <button type="submit" aria-label="Buscar">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
             </button>
         </form>
 
         <nav aria-label="Acesso rápido">
             <ul>
                 <li>
-                    <a href="#" aria-label="Ver o carrinho"><i class="fa-solid fa-cart-shopping"></i>Carrinho</a>
+                    <a href="#" aria-label="Ver o carrinho"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                        </svg></i>Carrinho</a>
                 </li>
                 <li>
-                    <a href="#" aria-label="Fazer login na sua conta"><i class="fa-solid fa-user"></i> Entrar</a>
+                    <a href="login-usuario.html" aria-label="Fazer login na sua conta"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg></i> Entrar</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <nav aria-label="Menu principal">
+     <nav aria-label="Menu principal">
         <ul>
             <li><a href="#sobre-nos">Sobre nós</a></li>
             <li><a href="#contato-entrega">Contato</a></li>
             <li><a href="#contato-entrega">Entrega</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Cadastrar-se</a></li>
+            <li><a href="produtos-todos.html">Produtos</a></li>
+            <li><a href="cadastro.html">Cadastrar-se</a></li>
         </ul>
     </nav>
     <main>
@@ -135,8 +144,8 @@
                         (50+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -176,9 +185,10 @@
                         (78+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
+
                 </li>
 
                 <li class="card-promocao azul">
@@ -216,9 +226,9 @@
                         </svg>
                         (112+)
                     </p>
-                    <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                   <section class="botoes">
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -261,9 +271,9 @@
                         </svg>
                         (85+)
                     </p>
-                    <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                  <section class="botoes">
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -302,8 +312,8 @@
                         (50+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -342,8 +352,8 @@
                         (122+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -385,9 +395,9 @@
                         </svg>
                         (75+)
                     </p>
-                    <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                   <section class="botoes">
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -396,7 +406,8 @@
                     <h3>Morango Ninho</h3>
                     <p>Donut macio com recheio cremoso de leite Ninho e cobertura de geleia de morango, trazendo uma
                         combinação doce e refrescante.</p>
-                    <p class="preco-atual" id="preco2">Preço R$ 6,00<p>
+                    <p class="preco-atual" id="preco2">Preço R$ 6,00
+                    <p>
                     <p class="avaliacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -426,8 +437,8 @@
                         (150+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -466,8 +477,8 @@
                         (48+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -511,8 +522,8 @@
                         (150+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -551,8 +562,8 @@
                         (100+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -591,8 +602,8 @@
                         (245+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -636,8 +647,8 @@
                         (50+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -676,8 +687,8 @@
                         (98+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -716,8 +727,8 @@
                         (112+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -762,8 +773,8 @@
                         (85+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -802,8 +813,8 @@
                         (50+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -842,8 +853,8 @@
                         (122+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -887,8 +898,8 @@
                         (75+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -928,8 +939,8 @@
                         (150+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -968,8 +979,8 @@
                         (48+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -1012,8 +1023,8 @@
                         (50+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -1052,8 +1063,8 @@
                         (100+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -1092,8 +1103,8 @@
                         (45+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -1137,8 +1148,8 @@
                         (150+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -1178,8 +1189,8 @@
                         (100+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -1218,8 +1229,8 @@
                         (245+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
             </ul>
@@ -1230,7 +1241,8 @@
                     <img src="./imagens/Produtos-Projeto-Integrador/combo1-fundo.png"
                         alt="Combo com um MilkShake e um donout">
                     <h3>Delícia Estelar</h3>
-                    <p>Milkshake tropical de maracujá com blueberry, acompanhado de um donut macio de uva uma combinação doce, refrescante e cheia de personalidade!</p>
+                    <p>Milkshake tropical de maracujá com blueberry, acompanhado de um donut macio de uva uma combinação
+                        doce, refrescante e cheia de personalidade!</p>
                     <p class="preco" id="preco1">Por R$ 18,00</p>
                     <p class="avaliacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1261,15 +1273,17 @@
                         (50+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
                 <li class="card-promocao lilas">
-                    <img src="./imagens/Produtos-Projeto-Integrador/combo2-fundo.png" alt="Combo um milkshake e tres donut">
+                    <img src="./imagens/Produtos-Projeto-Integrador/combo2-fundo.png"
+                        alt="Combo um milkshake e tres donut">
                     <h3>Combo Delírio Doce</h3>
-                    <p>Três donuts deliciosos baunilha, chocolate e Nutella acompanhados de um milkshake cremoso de Oreo. Uma combinação doce e irresistível!</p>
+                    <p>Três donuts deliciosos baunilha, chocolate e Nutella acompanhados de um milkshake cremoso de
+                        Oreo. Uma combinação doce e irresistível!</p>
                     <p class="preco-atual" id="preco2">Por R$ 28,00</p>
                     <p class="avaliacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1300,15 +1314,16 @@
                         (20+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
                 <li class="card-promocao azul">
                     <img src="./imagens/Produtos-Projeto-Integrador/combo3-fundo.png" alt="BlueMará">
                     <h3>Prestígio de Frutas</h3>
-                    <p>Donuts de baunilha, chocolate e uva com dois milkshakes deliciosos: um de açaí e outro de prestígio. Uma mistura doce e refrescante que combina sabores clássicos e tropicais!</p>
+                    <p>Donuts de baunilha, chocolate e uva com dois milkshakes deliciosos: um de açaí e outro de
+                        prestígio. Uma mistura doce e refrescante que combina sabores clássicos e tropicais!</p>
                     <p class="preco-atual" id="preco3">Por R$ 35,00</p>
                     <p class="avaliacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1339,8 +1354,8 @@
                         (62+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -1353,7 +1368,8 @@
                     <img src="./imagens/Produtos-Projeto-Integrador/combo4-fundo.png"
                         alt="MilkShake de Marshmallow com Chocolate">
                     <h3>Maré de Sabor</h3>
-                    <p>Donuts de chocolate baunilha e vanilla com milkshakes refrescantes de maracujá e manga com maracujá. Uma combinação doce e tropical para alegrar seu dia!</p>
+                    <p>Donuts de chocolate baunilha e vanilla com milkshakes refrescantes de maracujá e manga com
+                        maracujá. Uma combinação doce e tropical para alegrar seu dia!</p>
                     <p class="preco" id="preco1">Por R$ 35,00</p>
                     <p class="avaliacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1384,15 +1400,17 @@
                         (52+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
                 <li class="card-promocao lilas">
-                    <img src="./imagens/Produtos-Projeto-Integrador/combo5-fundo.png" alt="Combo com um MilkShake e um Donout">
-                    <h3>Combo  Beijo de Nutella</h3>
-                    <p>Donut recheado de Nutella com um milkshake cremoso de framboesa. Uma combinação doce e marcante, perfeita para momentos especiais!</p>
+                    <img src="./imagens/Produtos-Projeto-Integrador/combo5-fundo.png"
+                        alt="Combo com um MilkShake e um Donout">
+                    <h3>Combo Beijo de Nutella</h3>
+                    <p>Donut recheado de Nutella com um milkshake cremoso de framboesa. Uma combinação doce e marcante,
+                        perfeita para momentos especiais!</p>
                     <p class="preco-atual" id="preco2">Por R$ 18,00</p>
                     <p class="avaliacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1423,15 +1441,17 @@
                         (98+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
                 <li class="card-promocao azul">
-                    <img src="./imagens/Produtos-Projeto-Integrador/combo6-fundo.png" alt="Combo um MilkShake com tres donouts">
+                    <img src="./imagens/Produtos-Projeto-Integrador/combo6-fundo.png"
+                        alt="Combo um MilkShake com tres donouts">
                     <h3>Sensação do Dia</h3>
-                    <p>Donuts de chocolate, morango e baunilha com um milkshake cremoso sabor Sensação. Uma combinação doce e irresistível para quem ama sabores clássicos!</p>
+                    <p>Donuts de chocolate, morango e baunilha com um milkshake cremoso sabor Sensação. Uma combinação
+                        doce e irresistível para quem ama sabores clássicos!</p>
                     <p class="preco-atual" id="preco3">Por R$ 28,00</p>
                     <p class="avaliacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1462,8 +1482,8 @@
                         (52+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
@@ -1472,10 +1492,10 @@
             <ul class="lista-promocoes">
 
                 <li class="card-promocao rosa">
-                    <img src="./imagens/Produtos-Projeto-Integrador/combo7-fundo.png"
-                        alt="Combo com cinco donuts">
+                    <img src="./imagens/Produtos-Projeto-Integrador/combo7-fundo.png" alt="Combo com cinco donuts">
                     <h3>Arco-Íris de Sabores</h3>
-                    <p>Cinco donuts coloridos e deliciosos: pistache, uva, céu azul, baunilha e frutas vermelhas. Um mix divertido, vibrante e cheio de sabor para quem ama variedade!</p>
+                    <p>Cinco donuts coloridos e deliciosos: pistache, uva, céu azul, baunilha e frutas vermelhas. Um mix
+                        divertido, vibrante e cheio de sabor para quem ama variedade!</p>
                     <p class="preco" id="preco1">Por R$ 27,00</p>
                     <p class="avaliacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1506,15 +1526,16 @@
                         (50+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-rosa">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
                 <li class="card-promocao lilas">
                     <img src="./imagens/Produtos-Projeto-Integrador/combo8-fundo.png" alt="MilkShake de Oreo">
                     <h3>Quatro Estações</h3>
-                    <p>Quatro milkshakes frutados e refrescantes: maracujá com mirtilo, manga, framboesa e morango com calda de chocolate. Um mix tropical cheio de sabor!</p>
+                    <p>Quatro milkshakes frutados e refrescantes: maracujá com mirtilo, manga, framboesa e morango com
+                        calda de chocolate. Um mix tropical cheio de sabor!</p>
                     <p class="preco-atual" id="preco2">Por R$ 55,00</p>
                     <p class="avaliacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1545,15 +1566,16 @@
                         (78+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-lilas">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
                 <li class="card-promocao azul">
                     <img src="./imagens/Produtos-Projeto-Integrador/combo9-fundo.png" alt="BlueMará">
                     <h3>Universo Açucarado</h3>
-                    <p>3 donuts (céu azul, uva e morango com chocolate) e 3 milkshakes (açaí, sensação e manga com framboesa e mirtilo). Uma mistura colorida e refrescante!</p>
+                    <p>3 donuts (céu azul, uva e morango com chocolate) e 3 milkshakes (açaí, sensação e manga com
+                        framboesa e mirtilo). Uma mistura colorida e refrescante!</p>
                     <p class="preco-atual" id="preco3">Por R$ 74,00</p>
                     <p class="avaliacao">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -1584,8 +1606,8 @@
                         (122+)
                     </p>
                     <section class="botoes">
-                        <button class="carrinho-azul">Adicionar ao Carrinho</button>
-                        <button class="ver-mais">Ver mais</button>
+                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao ver-mais">Ver mais</a>
                     </section>
                 </li>
 
