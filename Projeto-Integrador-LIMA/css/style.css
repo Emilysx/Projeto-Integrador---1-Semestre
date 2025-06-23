@@ -2387,6 +2387,11 @@ input:focus {
     outline: 2px solid #6366f1;
     outline-offset: 2px;
 }
+.link-botao {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
 
 .info-seguranca {
     display: flex;
