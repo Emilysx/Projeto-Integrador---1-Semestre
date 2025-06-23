@@ -2,9 +2,9 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Página Principal</title>
 </head>
 
@@ -12,12 +12,12 @@
 
     <header>
         <a href="index.html" aria-label="Página inicial">
-            <img src="imagens/logo.png" alt="Logo Candy Lovers" class="logo">
+            <img src="imagens/logo.png" alt="Logo Candy Lovers" class="logoHeader" />
         </a>
 
         <form role="search" aria-label="Pesquisar produtos">
-            <label for="search" class="visually-hidden">Pesquisar</label>
-            <input type="search" id="search" name="search" placeholder="Pesquisar">
+            <label for="search" class="visuallyHidden">Pesquisar</label>
+            <input type="search" id="search" name="search" placeholder="Pesquisar" />
             <button type="submit" aria-label="Buscar">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
                     viewBox="0 0 16 16">
@@ -34,14 +34,14 @@
                             width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
                             <path
                                 d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-                        </svg></i>Carrinho</a>
+                        </svg>Carrinho</a>
                 </li>
                 <li>
                     <a href="login-usuario.html" aria-label="Fazer login na sua conta"><svg
                             xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-person-fill" viewBox="0 0 16 16">
                             <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                        </svg></i> Entrar</a>
+                        </svg> Entrar</a>
                 </li>
             </ul>
         </nav>
@@ -57,46 +57,44 @@
         </ul>
     </nav>
     <main>
-        <!-- Carrossel de banners -->
         <section class="carrossel" aria-label="Destaques da loja">
-            <figure class="banner">
-                <img src="./imagens/Banners-ProjetoIntegrador/Banner Donuts.png" alt="Novos sabores de donuts">
+            <figure class="bannerItem">
+                <img src="./imagens/Banners-ProjetoIntegrador/Banner Donuts.png" alt="Novos sabores de donuts" />
             </figure>
-            <figure class="banner">
+            <figure class="bannerItem">
                 <img src="./imagens/Banners-ProjetoIntegrador/Banner MilkShake.png"
-                    alt="Promoção especial de milkshakes">
+                    alt="Promoção especial de milkshakes" />
             </figure>
-            <figure class="banner">
-                <img src="./imagens/Banners-ProjetoIntegrador/Banner Combinação.png" alt="Combos imperdíveis para você">
+            <figure class="bannerItem">
+                <img src="./imagens/Banners-ProjetoIntegrador/Banner Combinação.png" alt="Combos imperdíveis para você" />
             </figure>
         </section>
 
-        <!-- Categorias -->
-        <section class="categorias">
+        <section class="categoriasProdutos">
             <h2>Categorias</h2>
             <nav>
                 <ul>
-                    <li class="categoria-todos">
+                    <li class="categoriaTodos">
                         <a href="produtos-todos.html">
-                            <img src="./imagens/Produtos-Projeto-Integrador/29.png" alt="Todos os produtos">
+                            <img src="./imagens/Produtos-Projeto-Integrador/29.png" alt="Todos os produtos" />
                             <span>Todos</span>
                         </a>
                     </li>
-                    <li class="categoria-donut">
+                    <li class="categoriaDonut">
                         <a href="produtos-donuts.html">
-                            <img src="./imagens/Produtos-Projeto-Integrador/31.png" alt="Donuts">
+                            <img src="./imagens/Produtos-Projeto-Integrador/31.png" alt="Donuts" />
                             <span>Donuts</span>
                         </a>
                     </li>
-                    <li class="categoria-milkshake">
+                    <li class="categoriaMilkshake">
                         <a href="produtos-milkshake.html">
-                            <img src="./imagens/Produtos-Projeto-Integrador/milkshake-2.png" alt="Milkshake">
+                            <img src="./imagens/Produtos-Projeto-Integrador/milkshake-2.png" alt="Milkshake" />
                             <span>Milkshake</span>
                         </a>
                     </li>
-                    <li class="categoria-combos">
+                    <li class="categoriaCombos">
                         <a href="produtos-combos.html">
-                            <img src="./imagens/Produtos-Projeto-Integrador/51.png" alt="Combos">
+                            <img src="./imagens/Produtos-Projeto-Integrador/51.png" alt="Combos" />
                             <span>Combos</span>
                         </a>
                     </li>
@@ -104,19 +102,18 @@
             </nav>
         </section>
 
-        <!-- Promoções da semana -->
-        <section class="promocoes-semana">
+        <section class="promocoesSemana">
             <h2>Promoções da semana</h2>
 
-            <ul class="lista-promocoes">
+            <ul class="listaPromocoes">
 
-                <li class="card-promocao rosa">
-                    <img src="./imagens/Produtos-Projeto-Integrador/promocao1-fundo.png" alt="Clássicos do Amor">
+                <li class="cardPromocao rosa">
+                    <img src="./imagens/Produtos-Projeto-Integrador/promocao1-fundo.png" alt="Clássicos do Amor" />
                     <h3>Clássicos do Amor</h3>
                     <p>O trio perfeito de donuts fofinhos com cobertura de morango, chocolate e baunilha.</p>
-                    <p class="preco-antigo">De R$ 18,00</p>
-                    <p class="preco" id="preco1">Por R$ 15,00</p>
-                    <p class="avaliacao">
+                    <p class="precoAntigo">De R$ 18,00</p>
+                    <p class="precoAtual" id="precoPromocao1">Por R$ 15,00</p>
+                    <p class="avaliacaoProduto">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path
@@ -144,19 +141,19 @@
                         </svg>
                         (65+)
                     </p>
-                    <section class="botoes">
-                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
-                        <a href="#" class="botao ver-mais">Ver mais</a>
+                    <section class="botoesAcao">
+                        <a href="#" class="botao carrinhoLilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao verMais">Ver mais</a>
                     </section>
                 </li>
 
-                <li class="card-promocao lilas">
-                    <img src="./imagens/Produtos-Projeto-Integrador/promocao2-fundo.png" alt="Combo Geladinho & Donut">
+                <li class="cardPromocao lilas">
+                    <img src="./imagens/Produtos-Projeto-Integrador/promocao2-fundo.png" alt="Combo Geladinho & Donut" />
                     <h3>Combo Geladinho & Donut</h3>
                     <p>Dois milkshakes cremosos (baunilha e cookies) + donut com confeitos coloridos.</p>
-                    <p class="preco-antigo">De R$ 36,00</p>
-                    <p class="preco-atual" id="preco2">Por R$ 33,00</p>
-                    <p class="avaliacao">
+                    <p class="precoAntigo">De R$ 36,00</p>
+                    <p class="precoAtual" id="precoPromocao2">Por R$ 33,00</p>
+                    <p class="avaliacaoProduto">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path
@@ -184,21 +181,21 @@
                         </svg>
                         (38+)
                     </p>
-                    <section class="botoes">
-                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
-                        <a href="#" class="botao ver-mais">Ver mais</a>
+                    <section class="botoesAcao">
+                        <a href="#" class="botao carrinhoLilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao verMais">Ver mais</a>
                     </section>
                 </li>
 
-                <li class="card-promocao azul">
-                    <img src="./imagens/Produtos-Projeto-Integrador/promocao3-fundo.png" alt="Choco Power">
+                <li class="cardPromocao azul">
+                    <img src="./imagens/Produtos-Projeto-Integrador/promocao3-fundo.png" alt="Choco Power" />
                     <h3>Choco Power</h3>
                     <p>Milkshake de maracujá com chocolate, milkshake de chocolate com ninho + donut de chocolate e
                         donut de
                         ninho.</p>
-                    <p class="preco-antigo">De R$ 42,00</p>
-                    <p class="preco-atual" id="preco3">Por R$ 38,00</p>
-                    <p class="avaliacao">
+                    <p class="precoAntigo">De R$ 42,00</p>
+                    <p class="precoAtual" id="precoPromocao3">Por R$ 38,00</p>
+                    <p class="avaliacaoProduto">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-star-fill" viewBox="0 0 16 16">
                             <path
@@ -226,17 +223,16 @@
                         </svg>
                         (30+)
                     </p>
-                    <section class="botoes">
-                        <a href="#" class="botao carrinho-lilas">Adicionar ao Carrinho</a>
-                        <a href="#" class="botao ver-mais">Ver mais</a>
+                    <section class="botoesAcao">
+                        <a href="#" class="botao carrinhoLilas">Adicionar ao Carrinho</a>
+                        <a href="#" class="botao verMais">Ver mais</a>
                     </section>
                 </li>
 
             </ul>
         </section>
 
-        <!-- Sobre nos -->
-        <section id="sobre-nos">
+        <section id="sobreNos">
             <h2>Sobre Nós</h2>
             <p>
                 Nossa história começou com um simples desejo: adoçar o dia das pessoas.
@@ -245,10 +241,10 @@
                 tem o poder de transformar qualquer dia comum em um dia especial.
             </p>
 
-            <img src="./imagens/Produtos-Projeto-Integrador/donut-lupa.png" alt="Personagem Donut feliz">
+            <img src="./imagens/Produtos-Projeto-Integrador/donut-lupa.png" alt="Personagem Donut feliz" />
 
-            <article class="missao-valores">
-                <section class="bloco-missao">
+            <article class="missaoValores">
+                <section class="blocoMissao">
                     <h3>Missão</h3>
                     <p>
                         Adoçar momentos e espalhar felicidade por meio de donuts feitos com alma, sabor e um toque de
@@ -257,27 +253,25 @@
                     </p>
                 </section>
 
-                <section class="bloco-valores">
+                <section class="blocoValores">
                     <h3>Valores</h3>
                     <p>
-                        Paixão pelo sabor – Cada donut é preparado com dedicação e ingredientes de qualidade.<br>
-                        Simplicidade que encanta – Acreditamos na beleza das pequenas coisas.<br>
+                        Paixão pelo sabor – Cada donut é preparado com dedicação e ingredientes de qualidade.<br />
+                        Simplicidade que encanta – Acreditamos na beleza das pequenas coisas.<br />
                         Conexão com as pessoas – Nosso propósito é criar laços doces com quem nos escolhe.
                     </p>
                 </section>
             </article>
         </section>
 
-        <!-- Informações da loja - Contado e Entregas -->
-        <section id="contato-entrega">
-            <div class="contato-entrega-conteudo">
-                <!-- Bloco Contato -->
-                <article aria-labelledby="contato-titulo" class="contato-box">
-                    <h2 id="contato-titulo">Contato</h2>
-                    <p class="contato-descricao">
+        <section id="contatoEntrega">
+            <div class="contatoEntregaConteudo">
+                <article aria-labelledby="contatoTitulo" class="contatoBox">
+                    <h2 id="contatoTitulo">Contato</h2>
+                    <p class="contatoDescricao">
                         Ficou com vontade? Fala com a gente!
                     </p>
-                    <address class="contato-info">
+                    <address class="contatoInfo">
                         <p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-envelope" viewBox="0 0 16 16">
@@ -312,7 +306,7 @@
                                 @candylovers
                             </a>
                         </p>
-                        <p class="contato-texto">
+                        <p class="contatoTexto">
                             Estamos sempre prontos para adoçar seu dia
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
@@ -323,13 +317,12 @@
                     </address>
                 </article>
 
-                <!-- Bloco Entrega -->
-                <article aria-labelledby="entrega-titulo" class="entrega-box">
-                    <h2 id="entrega-titulo">Entrega</h2>
-                    <p class="entrega-descricao">
+                <article aria-labelledby="entregaTitulo" class="entregaBox">
+                    <h2 id="entregaTitulo">Entrega</h2>
+                    <p class="entregaDescricao">
                         Entregamos em toda a cidade com agilidade e carinho!
                     </p>
-                    <ul class="entrega-lista">
+                    <ul class="entregaLista">
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -372,7 +365,7 @@
                             <strong>Prazo:</strong> Até 45 min após confirmação do pedido
                         </li>
                     </ul>
-                    <p class="entrega-texto">
+                    <p class="entregaTexto">
                         Receba nossos donuts quentinhos na sua porta porque alegria também se entrega! 🧁
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-stars" viewBox="0 0 16 16">
@@ -383,57 +376,54 @@
                 </article>
             </div>
 
-            <figure class="contato-entrega-imagem">
+            <figure class="contatoEntregaImagem">
                 <img src="./imagens/Produtos-Projeto-Integrador/donut-duvida.png"
-                    alt="Personagem de donut com expressão de dúvida">
+                    alt="Personagem de donut com expressão de dúvida" />
             </figure>
 
         </section>
 
-        <!-- Card -->
-        <section class="card-newsletter" aria-labelledby="card-titulo">
-            <span class="elemento-card elemento-card-1" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-2" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-3" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-4" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-5" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-6" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-7" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-8" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-10" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-11" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-12" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-13" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-14" aria-hidden="true"></span>
-            <span class="elemento-card elemento-card-15" aria-hidden="true"></span>
-            <span class="card-fundo-roxo" aria-hidden="true"></span>
+        <section class="cardNewsletter" aria-labelledby="cardTitulo">
+            <span class="elementoCard elementoCard1" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard2" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard3" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard4" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard5" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard6" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard7" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard8" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard10" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard11" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard12" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard13" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard14" aria-hidden="true"></span>
+            <span class="elementoCard elementoCard15" aria-hidden="true"></span>
+            <span class="cardFundoRoxo" aria-hidden="true"></span>
 
-            <article class="conteudo-card">
-                <h1 id="card-titulo" class="titulo-card">
+            <article class="conteudoCard">
+                <h1 id="cardTitulo" class="tituloCard">
                     Fique por dentro das novidades!
                 </h1>
-                <p class="descricao-card">
+                <p class="descricaoCard">
                     Descubra em primeira mão o que está saindo do nosso forno!
                     Cadastre-se para receber novidades, coleções especiais e conteúdos deliciosos.
                 </p>
             </article>
 
-            <form class="formulario-card" aria-label="Formulário de inscrição para newsletter">
-                <label for="campo-email" class="oculto-visual">Seu endereço de e-mail</label>
-                <input type="email" id="campo-email" name="email" placeholder="E-mail" class="campo-input-card" required
-                    aria-required="true">
-                <button type="submit" class="botao-card">Inscrever-se</button>
+            <form class="formularioCard" aria-label="Formulário de inscrição para newsletter">
+                <label for="campoEmail" class="ocultoVisual">Seu endereço de e-mail</label>
+                <input type="email" id="campoEmail" name="email" placeholder="E-mail" class="campoInputCard" required
+                    aria-required="true" />
+                <button type="submit" class="botaoCard">Inscrever-se</button>
             </form>
         </section>
     </main>
 
-    <!-- Rodapé -->
     <footer>
         <nav aria-label="Rodapé principal">
-            <!-- Logo e redes sociais -->
-            <section aria-labelledby="footer-junte">
-                <img src="./imagens/logo2.png" alt="Logo Candy Lovers com chantilly e cereja" class="logo-footer">
-                <p id="footer-junte"><strong>Junte-se a nós</strong></p>
+            <section aria-labelledby="footerJunte">
+                <img src="./imagens/logo2.png" alt="Logo Candy Lovers com chantilly e cereja" class="logoFooter" />
+                <p id="footerJunte"><strong>Junte-se a nós</strong></p>
                 <address>
                     <ul>
                         <li>
@@ -476,9 +466,8 @@
                 </address>
             </section>
 
-            <!-- Suporte -->
-            <section aria-labelledby="footer-suporte">
-                <h2 id="footer-suporte">Suporte</h2>
+            <section aria-labelledby="footerSuporte">
+                <h2 id="footerSuporte">Suporte</h2>
                 <ul>
                     <li><a href="#">SAQ</a></li>
                     <li><a href="#">Trocas e Devoluções</a></li>
@@ -488,9 +477,8 @@
                 </ul>
             </section>
 
-            <!-- Institucional -->
-            <section aria-labelledby="footer-institucional">
-                <h2 id="footer-institucional">Institucional</h2>
+            <section aria-labelledby="footerInstitucional">
+                <h2 id="footerInstitucional">Institucional</h2>
                 <ul>
                     <li><a href="#">Nossa Loja</a></li>
                     <li><a href="#">Políticas de Privacidade</a></li>
@@ -499,19 +487,18 @@
                 </ul>
             </section>
 
-            <!-- Formas de Pagamento -->
-            <section class="pagamento" aria-labelledby="footer-pagamento">
-                <h2 id="footer-pagamento">Formas de Pagamento</h2>
+            <section class="formasPagamento" aria-labelledby="footerPagamento">
+                <h2 id="footerPagamento">Formas de Pagamento</h2>
                 <ul>
-                    <li><img src="./imagens/cartao-elo.png" alt="Elo" class="cartao-elo"></li>
-                    <li><img src="./imagens/cartao-visa.png" alt="Visa"></li>
-                    <li><img src="./imagens/cartao-mastercard.png" alt="Mastercard"></li>
-                    <li><img src="./imagens/pix.png" alt="Pix"></li>
+                    <li><img src="./imagens/cartao-elo.png" alt="Elo" class="cartaoElo" /></li>
+                    <li><img src="./imagens/cartao-visa.png" alt="Visa" /></li>
+                    <li><img src="./imagens/cartao-mastercard.png" alt="Mastercard" /></li>
+                    <li><img src="./imagens/pix.png" alt="Pix" /></li>
                 </ul>
             </section>
         </nav>
 
-        <div class="rodape-final">
+        <div class="rodapeFinal">
             <p>© 2025 candylovers. Todos os direitos reservados.</p>
             <span class="idioma" role="button" aria-label="Alterar idioma">Português <span aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -523,8 +510,5 @@
             </span>
         </div>
     </footer>
-
-
 </body>
-
 </html>

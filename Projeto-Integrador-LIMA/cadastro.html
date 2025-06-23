@@ -2,17 +2,17 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Cadastro</title>
 </head>
 
-<body id="tela-cadastro">
+<body id="telaCadastro">
 
-    <main class="cadastro-conteudo">
-        <form class="formulario-cadastro" novalidate>
-            <a href="login-usuario.html" class="botao-voltar">
+    <main class="cadastroConteudo">
+        <form class="formularioCadastro" novalidate>
+            <a href="login-usuario.html" class="botaoVoltar">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
                     <path
@@ -20,82 +20,83 @@
                 </svg>
                 Voltar
             </a>
-            <h1 class="titulo-principal">Cadastro</h1>
+            <h1 class="tituloPrincipal">Cadastro</h1>
 
-            <section class="conteudo-formulario">
-                <fieldset class="secao-informacoes-cadastro">
-                    <legend class="titulo-secao">Informações Pessoais</legend>
+            <section class="conteudoFormulario">
+                <fieldset class="secaoInformacoesCadastro">
+                    <legend class="tituloSecao">Informações Pessoais</legend>
 
-                    <label for="nome-completo" class="rotulo-campo">Nome Completo</label>
-                    <input type="text" id="nome-completo" name="nomeCompleto" class="campo-entrada"
-                        placeholder="Entre com seu Nome" required aria-required="true">
+                    <label for="nomeCompleto" class="rotuloCampo">Nome Completo</label>
+                    <input type="text" id="nomeCompleto" name="nomeCompleto" class="campoEntrada"
+                        placeholder="Entre com seu Nome" required aria-required="true" />
 
-                    <section class="linha-dupla">
-                        <div class="campo-grupo">
-                            <label for="data-nascimento" class="rotulo-campo">Data de Nascimento</label>
-                            <input type="text" id="data-nascimento" name="dataNascimento" class="campo-entrada"
-                                placeholder="xx/xx/xxxx" pattern="\d{2}/\d{2}/\d{4}" required aria-required="true">
+                    <section class="linhaDupla">
+                        <div class="campoGrupo">
+                            <label for="dataNascimento" class="rotuloCampo">Data de Nascimento</label>
+                            <input type="text" id="dataNascimento" name="dataNascimento" class="campoEntrada"
+                                placeholder="xx/xx/xxxx" pattern="\d{2}/\d{2}/\d{4}" required
+                                aria-required="true" />
                         </div>
 
-                        <div class="campo-grupo">
-                            <label for="cpf" class="rotulo-campo">CPF</label>
-                            <input type="text" id="cpf" name="cpf" class="campo-entrada" placeholder="Entre com seu CPF"
-                                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required aria-required="true">
+                        <div class="campoGrupo">
+                            <label for="cpfUsuario" class="rotuloCampo">CPF</label>
+                            <input type="text" id="cpfUsuario" name="cpf" class="campoEntrada" placeholder="Entre com seu CPF"
+                                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required aria-required="true" />
                         </div>
                     </section>
 
-                    <label for="email" class="rotulo-campo">Email</label>
-                    <input type="email" id="email" name="email" class="campo-entrada" placeholder="Entre com seu Email"
-                        required aria-required="true">
+                    <label for="emailUsuario" class="rotuloCampo">Email</label>
+                    <input type="email" id="emailUsuario" name="email" class="campoEntrada" placeholder="Entre com seu Email"
+                        required aria-required="true" />
 
-                    <label for="senha" class="rotulo-campo">Senha</label>
-                    <input type="password" id="senha" name="senha" class="campo-entrada"
-                        placeholder="Entre com sua Senha" required aria-required="true" minlength="6">
+                    <label for="senhaUsuario" class="rotuloCampo">Senha</label>
+                    <input type="password" id="senhaUsuario" name="senha" class="campoEntrada"
+                        placeholder="Entre com sua Senha" required aria-required="true" minlength="6" />
 
-                    <label for="confirma-senha" class="rotulo-campo">Confirma a senha</label>
-                    <input type="password" id="confirma-senha" name="confirmaSenha" class="campo-entrada"
-                        placeholder="Entre com sua Senha" required aria-required="true" minlength="6">
+                    <label for="confirmaSenha" class="rotuloCampo">Confirma a senha</label>
+                    <input type="password" id="confirmaSenha" name="confirmaSenha" class="campoEntrada"
+                        placeholder="Entre com sua Senha" required aria-required="true" minlength="6" />
 
-                    <label for="celular" class="rotulo-campo">Número do celular</label>
-                    <input type="tel" id="celular" name="celular" class="campo-entrada" placeholder="(xx) xxxxx-xxxx"
-                        pattern="\(\d{2}\) \d{5}-\d{4}" required aria-required="true">
+                    <label for="celularUsuario" class="rotuloCampo">Número do celular</label>
+                    <input type="tel" id="celularUsuario" name="celular" class="campoEntrada" placeholder="(xx) xxxxx-xxxx"
+                        pattern="\(\d{2}\) \d{5}-\d{4}" required aria-required="true" />
                 </fieldset>
 
-                <fieldset class="secao-endereco-cadastro">
-                    <legend class="titulo-secao">Endereço</legend>
+                <fieldset class="secaoEnderecoCadastro">
+                    <legend class="tituloSecao">Endereço</legend>
 
-                    <label for="rua" class="rotulo-campo">Rua</label>
-                    <input type="text" id="rua" name="rua" class="campo-entrada" placeholder="Entre com o nome da rua"
-                        required aria-required="true">
+                    <label for="ruaEndereco" class="rotuloCampo">Rua</label>
+                    <input type="text" id="ruaEndereco" name="rua" class="campoEntrada" placeholder="Entre com o nome da rua"
+                        required aria-required="true" />
 
-                    <section class="linha-dupla">
-                        <div class="campo-grupo campo-cep">
-                            <label for="cep" class="rotulo-campo">CEP</label>
-                            <input type="text" id="cep" name="cep" class="campo-entrada" placeholder="XXXXX-XXX"
-                                pattern="\d{5}-\d{3}" required aria-required="true">
+                    <section class="linhaDupla">
+                        <div class="campoGrupo campoCep">
+                            <label for="cepEndereco" class="rotuloCampo">CEP</label>
+                            <input type="text" id="cepEndereco" name="cep" class="campoEntrada" placeholder="XXXXX-XXX"
+                                pattern="\d{5}-\d{3}" required aria-required="true" />
                         </div>
 
-                        <div class="campo-grupo campo-numero">
-                            <label for="numero" class="rotulo-campo">Nº</label>
-                            <input type="text" id="numero" name="numero" class="campo-entrada" placeholder="XX" required
-                                aria-required="true">
+                        <div class="campoGrupo campoNumero">
+                            <label for="numeroEndereco" class="rotuloCampo">Nº</label>
+                            <input type="text" id="numeroEndereco" name="numero" class="campoEntrada" placeholder="XX"
+                                required aria-required="true" />
                         </div>
                     </section>
 
-                    <label for="bairro" class="rotulo-campo">Bairro</label>
-                    <input type="text" id="bairro" name="bairro" class="campo-entrada"
-                        placeholder="Entre com seu bairro" required aria-required="true">
+                    <label for="bairroEndereco" class="rotuloCampo">Bairro</label>
+                    <input type="text" id="bairroEndereco" name="bairro" class="campoEntrada"
+                        placeholder="Entre com seu bairro" required aria-required="true" />
 
-                    <label for="cidade" class="rotulo-campo">Cidade</label>
-                    <input type="text" id="cidade" name="cidade" class="campo-entrada"
-                        placeholder="Entre com sua cidade" required aria-required="true">
+                    <label for="cidadeEndereco" class="rotuloCampo">Cidade</label>
+                    <input type="text" id="cidadeEndereco" name="cidade" class="campoEntrada"
+                        placeholder="Entre com sua cidade" required aria-required="true" />
                 </fieldset>
             </section>
 
-            <button type="submit" class="botao-cadastrar">Cadastrar</button>
+            <button type="submit" class="botaoCadastrar">Cadastrar</button>
 
-            <p class="link-login">
-                <a href="login-usuario.html" class="link-entrar">Já tem conta? Entrar</a>
+            <p class="linkLogin">
+                <a href="login-usuario.html" class="linkEntrar">Já tem conta? Entrar</a>
             </p>
         </form>
     </main>

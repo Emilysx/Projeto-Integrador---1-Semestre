@@ -2,15 +2,15 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Login do Usuario</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login do Usuário</title>
 </head>
 
-<body id="tela-login">
-    <main class="caixa-login" role="main" aria-labelledby="titulo-login">
-        <a href="index.html" class="botao-voltar">
+<body id="telaLogin">
+    <main class="caixaLogin" role="main" aria-labelledby="tituloLogin">
+        <a href="index.html" class="botaoVoltar">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
                 <path
@@ -18,54 +18,52 @@
             </svg>
             Voltar
         </a>
-        <h1 id="titulo-login" class="titulo-login">Login</h1>
+        <h1 id="tituloLogin" class="tituloLogin">Login</h1>
 
-        <form class="formulario-login" action="#" method="post">
+        <form class="formularioLogin" action="#" method="post">
 
-            <section class="grupo-campo">
-                <label class="rotulo-campo" for="campo-email">Email</label>
-                <input class="entrada-campo" type="email" id="campo-email" name="email"
-                    placeholder="Entre com seu Email" required aria-required="true">
+            <section class="grupoCampo">
+                <label class="rotuloCampo" for="campoEmail">Email</label>
+                <input class="entradaCampo" type="email" id="campoEmail" name="email"
+                    placeholder="Entre com seu Email" required aria-required="true" />
             </section>
 
-            <section class="grupo-campo">
-                <label class="rotulo-campo" for="campo-senha">Senha</label>
-                <input class="entrada-campo" type="password" id="campo-senha" name="senha"
-                    placeholder="Entre com sua Senha" required aria-required="true">
-                <a href="#" class="link-esqueci-senha">Esqueceu sua senha?</a>
+            <section class="grupoCampo">
+                <label class="rotuloCampo" for="campoSenha">Senha</label>
+                <input class="entradaCampo" type="password" id="campoSenha" name="senha"
+                    placeholder="Entre com sua Senha" required aria-required="true" />
+                <a href="#" class="linkEsqueciSenha">Esqueceu sua senha?</a>
             </section>
 
-            <a href="index.html" class="botao-entrar">Entrar</a>
+            <a href="index.html" class="botaoEntrar">Entrar</a>
         </form>
 
-        <section class="divisor">
-            <hr class="linha-divisoria">
-            <span class="texto-divisor">ou</span>
-            <hr class="linha-divisoria">
+        <section class="divisorOpcoes">
+            <hr class="linhaDivisoria" />
+            <span class="textoDivisor">ou</span>
+            <hr class="linhaDivisoria" />
         </section>
 
-        <section class="login-social">
-            <a href="#" class="botao-social google">
+        <section class="loginSocial">
+            <a href="#" class="botaoSocial google">
                 <figure>
-                    <img src="./imagens/google.png" alt="Logo do Google">
+                    <img src="./imagens/google.png" alt="Logo do Google" />
                 </figure>
                 Entre com o Google
             </a>
 
-            <a href="#" class="botao-social apple">
+            <a href="#" class="botaoSocial apple">
                 <figure>
-                    <img src="./imagens/apple.png" alt="Logo da Apple">
+                    <img src="./imagens/apple.png" alt="Logo da Apple" />
                 </figure>
                 Entre com o Apple
             </a>
         </section>
 
-        <footer class="texto-cadastro">
+        <footer class="textoCadastro">
             Não tem conta? <a href="cadastro.html">Se cadastre-se</a>
         </footer>
     </main>
-
-
 </body>
 
 </html>
