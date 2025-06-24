@@ -1000,7 +1000,7 @@ footer .idioma {
 
 .botaoEntrar {
     background: linear-gradient(135deg, #FF9ECF 15%, #B990EF 50%, #BFE3FC 100%);
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 18px;
     border-radius: 12px;
@@ -1057,7 +1057,7 @@ footer .idioma {
     cursor: pointer;
     transition: border-color 0.3s ease, background-color 0.3s ease;
     text-decoration: none;
-    padding: 12px; /* Adicionado para uniformizar o padding */
+    padding: 12px; 
 }
 
 .loginSocial img {
@@ -1079,7 +1079,7 @@ footer .idioma {
 }
 
 .textoCadastro a {
-    color: #ff9a9e;
+    color: #ad0070;
     text-decoration: none;
 }
 
@@ -1196,7 +1196,6 @@ footer .idioma {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
-    /* Aumenta o espaço entre os campos */
     margin-top: 12px;
 }
 
@@ -1226,7 +1225,7 @@ footer .idioma {
     border-radius: 8px;
     font-size: 18px;
     font-weight: 600;
-    color: #ffffff;
+    color: #2f2f2f;
     cursor: pointer;
     transition: all 0.2s ease;
     height: 40px;
@@ -1324,7 +1323,7 @@ footer .idioma {
     gap: 0.5rem;
     font-size: 20px;
     font-weight: bold;
-    color: #b794c8;
+    color: #49205e;
     text-decoration: none;
 
     margin-top: 2rem;
